@@ -28,3 +28,9 @@ bool checkPalindrome(string inputString) {
 int main() {
     cout << checkPalindrome("aabaa"); // returns True (prints out 1) because aabaa backwards is aabaa
 }
+
+/*
+Another way to do this is with one simple line:
+return inputString == string(inputString.rbegin(), inputString.rend());
+The method i used is the manual way
+*/
